@@ -17,3 +17,7 @@
 
 ## Myndband
 - https://screencast-o-matic.com/watch/cqh1bwZK6E
+
+
+## Heimildir
+- https://www.w3schools.com/html/html5_canvas.asp
