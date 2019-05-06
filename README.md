@@ -13,3 +13,7 @@
 
 ## Samantekt
 - Hefði viljað hafa fleiri punkta en 5 á X og Y hnit.
+
+
+## Myndband
+- https://screencast-o-matic.com/watch/cqh1bwZK6E
