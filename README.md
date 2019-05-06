@@ -10,3 +10,6 @@
 - Í raun er þetta verkefni dæmi 2 úr verkefni 5 en núna setti ég það upp sem vefsíða. Þú setur inn X og Y fyrir tvo vigra og ýtir á ENTER.
   Eftir að þú ert búinn að ýta á ENTER, teiknar forritið vigrana á canvas. Einnig hægra megin við canvasinn er tafla sem sýnir allar tölur
   svo sem stefnuhorn, horn milli vigra o.s.frv. Ég notaði öðruvísi liti til þess að skilgreina hugtök.
+
+## Samantekt
+- Hefði viljað hafa fleiri punkta en 5 á X og Y hnit.
