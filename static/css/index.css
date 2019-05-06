@@ -1,0 +1,49 @@
+body{
+	background: #212121;
+	color: #ffffff;
+	font-family: Arial;
+}
+input{
+	padding: 5px;
+	background: #212121;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.inputCoordinates{
+	position: fixed;
+	left: 150px;
+	top: 200px;
+}
+#firstVigurStyleX, #firstVigurStyleY{
+	color: rgb(84, 255, 0);
+}
+#annarVigurStyleX, #annarVigurStyleY{
+	color: rgb(255, 0, 225);
+}
+.table{
+	position: fixed;
+	left: 1500px;
+	top: 200px;
+}
+table{
+	border-collapse: collapse;
+}
+th{
+	padding: 10px;
+	border: 1px solid #ffffff;
+}
+#firstCoordinatesStyle{
+	color: rgb(84, 255, 0);
+}
+#secondCoordinatesStyle{
+	color: rgb(255, 0, 225);
+}
+#firstStefnuhornStyle{
+	background: rgb(255, 0, 0, 0.8);
+}
+#hornMilliVigraStyle{
+	background: rgb(0, 195, 255, 0.8);
+}
+#summaMilliVigraStyle{
+	color: #fffa00;
+}
