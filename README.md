@@ -21,3 +21,4 @@
 
 ## Heimildir
 - https://www.w3schools.com/html/html5_canvas.asp
+  Ekki mikið af heimildum, þurfti að rifja upp hvernig canvas virkar og formúlurnar í stærðfræðinni
