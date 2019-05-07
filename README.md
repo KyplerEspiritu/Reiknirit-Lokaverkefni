@@ -25,6 +25,9 @@
     síðunni.
    ##### 25.04.19
     Fínpússa kóðan 
+   ##### 06.05.19
+    Setti síðuna upp í bottle.py
+    
 
 ## Lýsing á verkefni
 - Í raun er þetta verkefni dæmi 2 úr verkefni 5 en núna setti ég það upp sem vefsíða. Þú setur inn X og Y fyrir tvo vigra og ýtir á ENTER.
