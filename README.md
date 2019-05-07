@@ -31,17 +31,18 @@
     Vinna í skýrsluna
     
 ## Lýsing á verkefni
-- Þetta er eiginlega dæmi 2 úr verkefni 5. Það sem við gerðum í verkefni 5 dæmi 2 var að notandinn slær inn tölur sem í raun og veru
-  eru punktarnir fyrir vigrana. Forritið svo tekur þessar tölur inn og skilar út Vigrana, Legnd fyrsta vigurs, hallatala fyrsta vigurs,
-  þvervigur fyrsta vigurs, stefnuhorn fyrsta vigurs, horn milli fyrsta vigurs og annar vigurs og summu þeirra. Við forrituðum verkefni 5
-  í Python en fyrir lokaverkefnið forritaði ég í JavaScript. Ég bætti við hnitakerfi í canvas þannig þú getur séð allar upplýsingar 
-  myndrænt í canvas og einnig er ég með töflu hægra megin sem geymir upplýsingar.
+- Það sem við gerðum í verkefni 5 dæmi 2 var að notandinn slær inn tölur sem í raun og veru eru punktarnir fyrir vigrana. Forritið svo 
+  tekur þessar tölur inn og skilar út Vigrana, Legnd fyrsta vigurs, hallatala fyrsta vigurs, þvervigur fyrsta vigurs, stefnuhorn fyrsta 
+  vigurs, horn milli fyrsta vigurs og annar vigurs og summu þeirra. Við forrituðum verkefni 5 í Python en fyrir lokaverkefnið forrita  
+  ég í JavaScript. 
+  Þetta er mjög svipað og það sem við gerðum í verkefni 5 en núna bætti ég við hnitakerfi í canvas þannig þú getur séð allar upplýsingar 
+  myndrænt í canvas og einnig er ég með töflu hægra megin sem geymir upplýsingar. 
   
   Hvernig virkar forritið?
    - Þú slærð inn punktana á vigrana
    - Ýtir svo á ENTER
   
-  Forritið teiknar svo allt á canvas og tölurnar koma á töfluna hægra meginn
+  Forritið teiknar svo allt á canvas og tölurnar koma á töfluna hægra meginn.
 
 ## Samantekt
 - Hefði viljað hafa fleiri punkta en 5 á X og Y hnit.
