@@ -10,15 +10,11 @@ class Vigur {
     this.y = y;
   }
 
-  getX(){
-  	return this.x;
-  }
+  getX(){ return this.x; }
 
-  getY(){
-  	return this.y;
-  }
+  getY(){ return this.y; }
 
-  prenta(){
+  prenta(){ // Skilar vigrana sem string
     var stringPoints;
     if(this.head == 0){
       stringPoints = "[" + this.x + " " + this.y + "]";
@@ -34,23 +30,23 @@ class Vigur {
     }
   }
   
-  lengd(){
+  lengd(){ // Skilar lengd
     var lengd_c_veldi = Math.pow(this.x, 2) + Math.pow(this.y, 2);
     var lengd_c = Math.sqrt(lengd_c_veldi);
     return lengd_c.toFixed(2); 
   }
   
-  halli(){
+  halli(){ // Skilar hallatölur
     if (this.x != 0) { return (this.y/this.x).toFixed(2); }
     else { return "Enginn"; }
   }
 
-  thvervigur(){
+  thvervigur(){ // Skilar Þvervigurs
     this.head = 1;
     return this;
   }
   
-  stefnuhorn(){
+  stefnuhorn(){ // Skilar stefnuhorn fyrir töfluna
   	if(this.x == 0) { 
   		var stefnuhorn = Math.atan(this.y/0.001) * 180/Math.PI;
   	} else {
@@ -65,29 +61,29 @@ class Vigur {
 
   }
 
-  stefnuhornCanvas(){
+  stefnuhornCanvas(){ // Skilar stefnuhorn svo að forritið geti teiknað rétt inn í canvasinn
     var stefnuhorn = Math.atan(this.y/this.x) * 180/Math.PI;
     var stefnuhorn_rounded = Math.round(stefnuhorn * 10) / 10;
     return stefnuhorn_rounded;
   }
   
-  horn(v){
+  horn(v){ // Skilar horn milli vigra
     var teljari = (this.x * v.x) + (this.y * v.y);
     var nefnari = this.lengd() * v.lengd();
     var horn_milli_vigra = Math.acos(teljari/nefnari) * 180/Math.PI;
     return horn_milli_vigra.toFixed(1);
   }
 
-  summa(v){
+  summa(v){ // Skilar summa milli tveggja vigra
     var summaX = parseInt(this.x) + parseInt(v.x);
     var summaY = parseInt(this.y) + parseInt(v.y);
     return "[" + summaX + " " + summaY + "]";
   }
 }
-function getPoint(c1,c2,radius,angle){
+function getPoint(c1,c2,radius,angle){ // Þetta er fall sem skilar endpoint á ófullkomnum hring sem punkt inn á canvas
     return [c1+Math.cos(angle)*radius,c2+Math.sin(angle)*radius];
 }
-function drawCoordinatesSystem(){
+function drawCoordinatesSystem(){ // Fall sem teiknar hnitakerfið
 	ctx.fillStyle = "#bababa";
 	ctx.strokeStyle = "#bababa";
 	ctx.beginPath();
@@ -154,7 +150,7 @@ function drawCoordinatesSystem(){
 	ctx.fillText(5, 377.5, 16);
 	
 }
-function resetCanvas(){
+function resetCanvas(){ // Tæmir hnitakerfið
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.setLineDash([]);
 	drawCoordinatesSystem();
@@ -184,13 +180,15 @@ function drawVigurs(){
 	var firstNumberX = v1.getX()*68;
 	var firstNumberY = v1.getY()*68; 
 
-	ctx.strokeStyle = "rgb(84, 255, 0)";
-	ctx.beginPath();
+	ctx.beginPath(); // Þetta beginPath teiknar fyrsta vigur
 	ctx.moveTo(350, 350);
 	ctx.lineTo(350+firstNumberX, 350-firstNumberY);
+	ctx.strokeStyle = "rgb(84, 255, 0)";
 	ctx.stroke();
 
-	ctx.beginPath();
+	// Það sem er að gerast á þessari beginPath er að forritið er að teikna inn stefnuhornið eftir hvar vigurinn er á hnitakerfinu
+	// Einnig er ég að finna ákveðnan punkt á fyrsta vigurs svo ég gæti teiknað horn milli vigra
+	ctx.beginPath(); 
 	if (v1.getX() >= 0 && v1.getY() > 0){ // (+,+)
 		ctx.arc(350, 350, 50, -(stefnuhornFirstVigur/180 * Math.PI), 0); 
 		endPointVigur = getPoint(350, 350, 50, -(stefnuhornFirstVigur/180 * Math.PI)); 
@@ -214,7 +212,8 @@ function drawVigurs(){
 	ctx.fillStyle = "rgb(255, 0, 0, 0.8)";
 	ctx.fill();
 
-	ctx.beginPath();
+	
+	ctx.beginPath(); // Þetta fillir stefnuhornið mep lit
 	ctx.moveTo(350, 350);
 	ctx.lineTo(400+.5, 350);
 	ctx.lineTo(endPointVigur[0]+.5, endPointVigur[1]);
@@ -233,18 +232,19 @@ function drawVigurs(){
 	var secondNumberX = v2.getX()*68;
 	var secondNumberY = v2.getY()*68;
 
-	ctx.strokeStyle = "rgb(255, 0, 225)";
-	ctx.beginPath();
+	ctx.beginPath(); // Þetta beginPath teiknar annar vigur
 	ctx.moveTo(350, 350);
 	ctx.lineTo(350+secondNumberX, 350-secondNumberY);
+	ctx.strokeStyle = "rgb(255, 0, 225)";
 	ctx.stroke();
 
-	ctx.strokeStyle = "rgb(255, 0, 225, 0.25)";
-	ctx.beginPath();
+	ctx.beginPath(); // Þetta beinPath hins vegar teiknar annar vigur þar sem fyrsti vigur endaði
 	ctx.moveTo(350+firstNumberX, 350-firstNumberY);
 	ctx.lineTo((350+firstNumberX)+secondNumberX, (350-firstNumberY)-secondNumberY);
+	ctx.strokeStyle = "rgb(255, 0, 225, 0.25)";
 	ctx.stroke();
 
+	// Þessar if setningar nota ég til að finna ákveðinn punkt á annar vigur, svo ég gæti teiknað horn milli vigra
 	if (secondVigurX >= 0 && secondVigurY >= 0){ // (+,+)
 		endPointHorn = getPoint(350, 350, 40, -(stefnuhornSecondVigur/180 * Math.PI)); 
 	} 
@@ -258,18 +258,18 @@ function drawVigurs(){
 		endPointHorn = getPoint(350, 350, 40, (Math.abs(stefnuhornSecondVigur)/180 * Math.PI));
 	}
 
-	ctx.beginPath();
+	ctx.beginPath(); // Í þessu beginPath teikna ég horn milli vigra með hornunum sem ég fann áðan
 	ctx.moveTo(350, 350);
 	ctx.lineTo(startPointHorn[0], startPointHorn[1]);
 	ctx.lineTo(endPointHorn[0], endPointHorn[1]);
 	ctx.fillStyle = "rgb(0, 195, 255, 0.8)";
 	ctx.fill();
 
-	ctx.beginPath();
+	ctx.beginPath(); // Þetta beginPath teikna ég summa vigra
 	ctx.setLineDash([15, 5]);
-	ctx.strokeStyle = "#fffa00";
 	ctx.moveTo(350, 350);
 	ctx.lineTo((350+firstNumberX)+secondNumberX, (350-firstNumberY)-secondNumberY);
+	ctx.strokeStyle = "#fffa00";
 	ctx.stroke();
 	
 }

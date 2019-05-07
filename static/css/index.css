@@ -22,7 +22,7 @@ input{
 }
 .table{
 	position: fixed;
-	left: 1500px;
+	right: 150px;
 	top: 200px;
 }
 table{
