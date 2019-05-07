@@ -4,17 +4,17 @@
 - Kypler Lloyd
 
 ## Dagbók
-   ### 15.04.19 
+   ##### 15.04.19 
     Teiknaði canvasinn og hnitakerfin
-   ### 16.04.19
+   ##### 16.04.19
     Forritaði svo þú gætir teiknað vigra eftir punkta sem þú setur inn
-   ### 17.04.19
+   ##### 17.04.19
     Reyndi að láta teikna stefnuhorn 
-   ### 18.04.19
+   ##### 18.04.19
     Náði að láta canvasinn teikna stefnuhorn eftir fyrsta vigur
-   ### 19.04.19
+   ##### 19.04.19
     Reyndi að láta teikna horn milli vigra
-   ### 22.04.19
+   ##### 22.04.19
     Náðu að láta teikna horn milli vigra
   23.04.19
     Var ekki ánægður hvernig canvasinn teiknaði horn milli vigra, ég gerði það betra. Einnig breytti ég þemunni í dökkan lit.
