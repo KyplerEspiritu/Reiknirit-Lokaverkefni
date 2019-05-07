@@ -4,7 +4,25 @@
 - Kypler Lloyd
 
 ## Dagbók
-- Var að vinna í þessu meirihlutann í páskafríinu og kláraði þetta 6.maí
+- 15.04.19 
+    Teiknaði canvasinn og hnitakerfin
+  16.04.19
+    Forritaði svo þú gætir teiknað vigra eftir punkta sem þú setur inn
+  17.04.19
+    Reyndi að láta teikna stefnuhorn 
+  18.04.19
+    Náði að láta canvasinn teikna stefnuhorn eftir fyrsta vigur
+  19.04.19
+    Reyndi að láta teikna horn milli vigra
+  22.04.19
+    Náðu að láta teikna horn milli vigra
+  23.04.19
+    Var ekki ánægður hvernig canvasinn teiknaði horn milli vigra, ég gerði það betra. Einnig breytti ég þemunni í dökkan lit.
+    Ég breytti litunum á vigrana og bætti svo við summa vigra og litaði það og um lokin litaði ég stefnuhornið og horn milli vigra. 
+  24.04.19
+    
+  25.04.19
+  
 
 ## Lýsing á verkefni
 - Í raun er þetta verkefni dæmi 2 úr verkefni 5 en núna setti ég það upp sem vefsíða. Þú setur inn X og Y fyrir tvo vigra og ýtir á ENTER.
