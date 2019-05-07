@@ -5,9 +5,9 @@
 
 ## Dagbók
    ##### 15.04.19 
-    Teiknaði canvasinn og hnitakerfin
+    - Teiknaði canvasinn og hnitakerfin
    ##### 16.04.19
-    Forritaði svo þú gætir teiknað vigra eftir punkta sem þú setur inn
+    - Forritaði svo þú gætir teiknað vigra eftir punkta sem þú setur inn
    ##### 17.04.19
     Reyndi að láta teikna stefnuhorn 
    ##### 18.04.19
