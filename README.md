@@ -27,6 +27,8 @@
     Fínpússa kóðan 
    ##### 06.05.19
     Setti síðuna upp í bottle.py
+   ##### 07.05.19
+    Vinna í skýrsluna
     
 
 ## Lýsing á verkefni
