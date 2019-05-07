@@ -30,12 +30,11 @@
    ##### 07.05.19
     Vinna í skýrsluna
     
-
 ## Lýsing á verkefni
-- Í raun er þetta verkefni dæmi 2 úr verkefni 5 en núna setti ég það upp sem vefsíða. Þú setur inn X og Y fyrir tvo vigra og ýtir á ENTER.
-  Eftir að þú ert búinn að ýta á ENTER, teiknar forritið vigrana á canvas. Einnig hægra megin við canvasinn er tafla sem sýnir allar tölur
-  svo sem stefnuhorn, horn milli vigra o.s.frv. Ég notaði öðruvísi liti til þess að skilgreina hugtök. Forritunarmálið sem ég notaði
-  aðallega var JavaScript.
+- Þetta er eiginlega dæmi 2 úr verkefni 5. Það sem við gerðum í verkefni 5 dæmi 2 var að notandinn slær inn tölur sem í raun og veru
+  eru punktarnir fyrir vigrana. Forritið svo tekur þessar tölur inn og skilar út Vigrana, Legnd fyrsta vigurs, hallatala fyrsta vigurs,
+  þvervigur fyrsta vigurs, stefnuhorn fyrsta vigurs, horn milli fyrsta vigurs og annar vigurs og summu þeirra. Við forrituðum verkefni 5
+  í Python en fyrir lokaverkefnið forritaði ég í JavaScript.
 
 ## Samantekt
 - Hefði viljað hafa fleiri punkta en 5 á X og Y hnit.
