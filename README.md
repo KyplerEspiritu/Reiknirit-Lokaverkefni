@@ -1,3 +1,4 @@
+-- HEROKUAPP: https://kypler-reiknirit.herokuapp.com/ --
 # Reiknirit-Lokaverkefni
 
 ## Nöfn nemenda
