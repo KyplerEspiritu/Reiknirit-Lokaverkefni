@@ -1,4 +1,4 @@
-from bottle import route, run, template, static_file, request
+from bottle import *
 
 
 @route('/static/<filename:path>')
