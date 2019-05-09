@@ -7,6 +7,6 @@ def send_static(filename):
 
 @route("/")
 def index():
-    return  template("views/index.html")
+    return  template("index.tpl")
 
 run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)), reloader=True, debug=True)
