@@ -9,4 +9,4 @@ def send_static(filename):
 def index():
     return  template("views/index.html")
 
-run(host="0.0.0.0", port=os.environ.get('PORT', 8080), reloader=True, debug=True)
+run(host="0.0.0.0", port=int(os.environ.get('PORT', 33507)), reloader=True, debug=True)
